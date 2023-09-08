@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Menu</title>
+
+
+<style>
+li a{
+	text-decoration:none;
+	display:block;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+	margin-right: 25px;
+	margin-top: 10px;
+	padding:5px
+}
+
+.view{
+
+	color: white;
+	background-color: red;
+	font-size: 15px;
+	height:16px;
+	width:120px;
+	font-weight: bold;
+	margin-right: 25px;
+	margin-top: 13px;
+	padding:5px;
+	border: none;
+}
+
+
+ul{
+	list-style-type:none;
+}
+
+li{
+	display:inline-block;
+	float:left;
+	list-style: none;
+}
+
+.navbar{
+	background-color: rgb(255, 0, 0);
+	width:100%;
+	font-family:calibri;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.navdiv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	font-size: 40px;
+	color: white;
+	font-weight: 500;
+	margin-left:10px;
+}
+
+.sub{
+	background-color: black;
+	border-left:10px;
+	border-radius: 10px;
+	padding: 10px;
+	width: 120px;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.sub:hover{
+	background-color:white;
+}
+
+.sub a{
+	text-decoration: none;
+	color:white;
+}
+
+.sub a:hover{
+	color: red;
+}
+
+.image_slide{
+	width: 70%;
+	height: 550px;
+	position: absolute;
+	left: 50%;
+	top: 57%;
+	background-image: url('blood_images/donate.jpg');
+	transform: translate(-50%, -50%);
+	background-size: 100% 100%;
+	box-shadow:1px 2px 10px 5px black;
+	animation:slider 15s infinite alternate;
+}
+
+.image_slide:hover{
+	box-shadow:1px 2px 10px 5px brown;
+}
+
+.last{
+	width:100%;
+	margin-top: 45%;
+	text-align: left;
+	padding: 10px;
+	background-color: gray;
+	color: white;
+	margin-bottom: 10px;
+	height:30px;
+}
+
+p1{
+	margin-left:10px;
+	font-family:monospace;
+	
+}
+
+@keyframes slider{
+	0%{background-image: url('blood_images/heart_1.png');}
+	20%{background-image: url('blood_images/blood.png');}
+	40%{background-image: url('blood_images/hands.jpg');}
+	60%{background-image: url('blood_images/save.jpg');}
+	80%{background-image: url('blood_images/quote.jpg');}
+}
+
+p2{
+	float:right;
+	margin-right:15px;
+	font-family:monospace;
+}
+
+.logo:hover{
+	text-shadow:2px 5px 10px brown;
+}
+
+li a:hover{
+	text-shadow:1px 5px 5px brown;
+	text-border:2px black;
+}
+
+.view:hover{
+	text-shadow:1px 5px 5px brown;
+	text-border:2px black;
+}
+
+.admin a{
+	text-decoration: none;
+	color: white;
+	margin-left: 20px;
+}
+
+</style>
+<title>USER MENU</title>
+</head>
+
+<body>
+	
+	<form action="./User_Menu">
+	<nav class="navbar">
+	<div class="navdiv">
+	<div class="logo"><p>ELITES<br>BLOODBANK</p></div>
+	<ul>
+		<li><a href ="User_Menu.html">Home</a></li>
+		<li><button class="view" name="act" value="view_donor">View Donors</li>
+		<li><button class="view" name="act" value="view_event">View Events</li>
+		<li><a href ="Info.html">View Benefits</a></li>
+		<li><button class="view" name="act" value="view_bags">View Bags</li>
+		<li><button class="view" name="act" value="order_bb">Order Bags</li>
+		<li><a href ="OrderHistory.jsp">Order History</a></li>
+		<button class="sub"><a href ="Login_Page.jsp">Admin Login</a></button>
+	</ul>
+	</div>
+	</nav>
+
+	<div class="image_slide"></div>
+
+	<div class="last">
+		<p1>Contact Us: +91-XXXXXXXXX</p1>
+		<p2>Visit Us: XYZ Gadge Nagar,Amravati</p2>
+	</div>
+	
+	</form>
+
+</body>
+</html>

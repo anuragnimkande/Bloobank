@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: rgb(255, 213, 213);
+  animation:carding 5s infinite linear;
+}
+
+@keyframes carding{
+	0%{background-color: rgb(255, 213, 213);}
+	40%{background-color: rgb(255, 255, 255);}
+	70%{background-color: rgb(255, 181, 181);}
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgb(255, 100, 100);
+  margin: 8px;
+  background-color: rgb(255, 111, 111);
+}
+
+.about{
+  padding: 30px;
+  height: 10%;
+  text-align: center;
+  background-color: rgb(210, 0, 0);
+  color: white;
+  font-size: 40px;
+  font-family: impact;
+  animation:heading 3s infinite linear;
+  
+}
+
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img{
+	animation:slider 3s infinite linear;
+}
+
+@keyframes slider {
+	0%{opacity: 1;}
+	30%{opacity: 0.7;}
+	70%{opacity: 0.5;}
+}
+
+.row2{
+	margin-top: 40%;
+}
+
+.flow{
+	font-size: 15px;
+	font-family: monospace;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<title>BENEFITS</title>
+</head>
+<body>
+
+<div class="about">
+  <p>Benefits of Blood Donation</p>
+  
+  <div class="flow">
+		<marquee>
+			Free health checkup
+			In order to give blood, you are required to undergo a health screening. A trained staff member performs this checkup. They will check your:
+			1)pulse
+			2)blood pressure
+			3)body temperature
+			4)hemoglobin levels
+			This free mini-physical can offer excellent insight into your health
+		</marquee>
+	</div>
+</div>
+
+<marquee>
+	
+</marquee>
+
+<div class="row1">
+  <div class="column">
+    <div class="card">
+      <img src="blood_images/cancer.jpg" alt="Benefit1" style="width:100%">
+      <div class="container">
+        <h2>ANTI-CANCER BENEFITS</h2>
+        <p>Blood donation helps in lowering the risk of cancer. By donating blood the iron stores in the body are maintained at healthy levels. A reduction in the iron level in the body is linked with low cancer risk</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="blood_images/pros.jpg" alt="Benefit2" style="width:100%">
+      <div class="container">
+        <h2>A HEALTHIER HEART AND VASCULAR SYSTEM</h2>
+        <p>Regular blood donation is linked to lower blood pressure and a lower risk for heart attacks. It definitely helps to reduce cardiovascular risk factors, says Dr. DeSimone.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="blood_images/blood_cells.jpg" alt="Benefit3" style="width:100%">
+      <div class="container">
+        <h2>STIMULATES BLOOD CELL PRODUCTION</h2>
+        <p>After donating blood, the body works to replenish the blood loss. This stimulates the production of new blood cells and in turn, helps in maintaining good health</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+</body>
+</html>
